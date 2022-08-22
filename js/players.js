@@ -28,7 +28,7 @@ function setPlayerName(playerName) {
      console.log(playersChildCount);
      if (playersChildCount > 4) {
 
-          alert('hi')
+          alert('Five Player Selected');
      }
      else {
 
@@ -51,4 +51,35 @@ document.getElementById('setPlayer1').addEventListener('click', function () {
      setPlayerName(playerName);
      makeDisable('setPlayer1');
 });
+document.getElementById('setPlayer2').addEventListener('click',function(){
+     const playerName = getPlayersName('player2');
+
+     setPlayerName(playerName);
+     makeDisable('setPlayer2');
+});
+document.getElementById('setPlayer3').addEventListener('click',function(){
+     const playerName = getPlayersName('player3');
+
+     setPlayerName(playerName);
+     makeDisable('setPlayer3');
+});
+document.getElementById('setPlayer4').addEventListener('click',function(){
+     const playerName = getPlayersName('player4');
+
+     setPlayerName(playerName);
+     makeDisable('setPlayer4');
+});
+document.getElementById('setPlayer5').addEventListener('click',function(){
+     const playerName = getPlayersName('player5');
+
+     setPlayerName(playerName);
+     makeDisable('setPlayer5');
+});
+document.getElementById('setPlayer6').addEventListener('click',function(){
+     const playerName = getPlayersName('player6');
+
+     setPlayerName(playerName);
+     makeDisable('setPlayer6');
+});
+
 
