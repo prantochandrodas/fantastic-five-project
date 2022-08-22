@@ -107,7 +107,7 @@
                   <!-- seclected player name -->
                 <div class="card bg-black mt-8 text-white">
                   
-                   <h1 class="text-3xl  text-center py-3">Selected -Players</h1>
+                   <h1 class="text-3xl  text-center py-3">Selected - V</h1>
                   <ul id="players" class="player-ul">
                     
                   </ul>
@@ -117,10 +117,10 @@
                 <div class="card bg-black mt-8 text-white py-10">
                    <h2 class="text-4xl text-center">Buget</h2>
                     <!-- pre player  -->
-                   <p class="m-3 text-lg ">Pre Player : <span><input type="text"></span></p>
-                   <button class="px-24 py-3 text-lg bg-blue-700 ml-8 mt-3">Calculate</button>
+                   <p class="m-3 text-lg ">Pre Player : <span><input type="text" id="per-player-fild" class="text-black"></span></p>
+                   <button class="px-24 py-3 text-lg bg-blue-700 ml-8 mt-3" id="btn-per-player-cost">Calculate</button>
                     <!-- player expenses  -->
-                   <p class="m-3 text-lg ">Player Expenses : <span></span></p>
+                   <p class="m-3 text-lg ">Player Expenses : $<span id="player-expenses"></span></p>
                    <!-- calculate total  -->
                    <p class="m-3 text-lg ">Manager : <span><input type="text"></span></p>
                    <p class="m-3 text-lg ">Coach : <span><input type="text"></span></p>
@@ -139,6 +139,7 @@
 
 
     <script src="js/players.js"></script>
+    <script src="js/perPlayerCost.js"></script>
 </body>
 
 </html>
