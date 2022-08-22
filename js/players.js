@@ -1,23 +1,5 @@
 
-// function getPlayerBtnById(name){
-//   const newPlayerName =  document.getElementById(name).innerText;
 
-
-//   const players = document.getElementById('players');
-//   const playersChildCount = players.childElementCount;
-//   console.log(playersChildCount);
-//    if(playersChildCount>4){
-
-//         alert('hi')
-//    }
-//    else{
-//     const creatPlayerList = document.createElement('ul');
-//     creatPlayerList.innerText= newPlayerName;
-//     players.append(creatPlayerList);
-
-//    }
-
-// }
 function getPlayersName(name) {
      const playerName = document.getElementById(name).innerText;
      return playerName;

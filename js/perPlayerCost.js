@@ -4,9 +4,19 @@ document.getElementById('btn-per-player-cost').addEventListener('click',function
     const perPlayerIntValue = parseInt(perPlayerFild);
 
 // calculate player cost and set that value 
-    const allFivePlayerCost = perPlayerIntValue * 5; 
-    const playerExpensesElement = document.getElementById('player-expenses');
-    playerExpensesElement.innerText=allFivePlayerCost;
+if(perPlayerFild == ""){
+    alert('Please fil up the pre Player fild');
+}
+else{
+    if(isNaN(perPlayerIntValue)){
+        alert('Please Put Number In The Input Fild')
+    }else{
+        const allFivePlayerCost = perPlayerIntValue * 5; 
+        const playerExpensesElement = document.getElementById('player-expenses');
+        playerExpensesElement.innerText=allFivePlayerCost;
+    }
+}
+    
   
     
    

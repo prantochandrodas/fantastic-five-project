@@ -122,11 +122,11 @@
                     <!-- player expenses  -->
                    <p class="m-3 text-lg ">Player Expenses : $<span id="player-expenses"></span></p>
                    <!-- calculate total  -->
-                   <p class="m-3 text-lg ">Manager : <span><input type="text"></span></p>
-                   <p class="m-3 text-lg ">Coach : <span><input type="text"></span></p>
-                   <button class="px-24 py-3  bg-blue-700 ml-4 mt-3">Calculate Total</button>
+                   <p class="m-3 text-lg ">Manager : <span><input type="text" id="manager-field" class="text-black"></span></p>
+                   <p class="m-3 text-lg ">Coach : <span><input type="text" id="coach-field" class="text-black"></span></p>
+                   <button class="px-24 py-3  bg-blue-700 ml-4 mt-3" id="btn-total">Calculate Total</button>
                     <!-- total  -->
-                    <p class="m-3 text-3xl ">Total: <span></span></p>
+                    <p class="m-3 text-3xl ">Total: $<span id="total"></span></p>
 
                 </div>
             </div>
@@ -140,6 +140,7 @@
 
     <script src="js/players.js"></script>
     <script src="js/perPlayerCost.js"></script>
+    <script src="js/calculateTotal.js"></script>
 </body>
 
 </html>
