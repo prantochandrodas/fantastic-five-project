@@ -9,8 +9,9 @@ function setPlayerName(playerName) {
      const playersChildCount = players.childElementCount;
      console.log(playersChildCount);
      if (playersChildCount > 4) {
-
+          
           alert('Five Player Selected');
+          makeDisable();
      }
      else {
 
@@ -22,23 +23,9 @@ function setPlayerName(playerName) {
 
 }
 function makeDisable(disable) {
-     const players = document.getElementById('players');
-     const playersChildCount = players.childNodes;
-     if(playersChildCount <= 5){
           const btnDisable = document.getElementById(disable);
           btnDisable.setAttribute('disabled', true);
           btnDisable.style.backgroundColor='gray';
-     }else{
-          const btnDisable = document.getElementById(disable);
-          btnDisable.setAttribute('disabled', true);
-          btnDisable.style.backgroundColor='blue';
-     }
- 
- 
-  
-     
-   
-
 }
 document.getElementById('setPlayer1').addEventListener('click', function () {
      const playerName = getPlayersName('player1');
